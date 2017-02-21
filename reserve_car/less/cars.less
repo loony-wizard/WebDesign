@@ -1,0 +1,86 @@
+.cities {
+	margin: 50px 0;
+	h2, p {
+		text-align: center;
+	}
+	h2 {
+		font-weight: 400;
+		padding: 10px 0;
+		color: #222;
+	}
+	p {
+		color: #666;
+	}
+	.row {
+		max-width: 1000px;
+		margin: 20px auto;
+	}
+	.col-lg-8, .col-lg-4, .col-md-6 {
+		padding: 0 15px;
+		margin: 15px 0;
+		.wrap {
+			position: relative;
+			overflow: hidden;
+			text-align: center;
+			border-radius: 10px;
+			.name {
+				z-index: 9;
+				position: absolute;
+				top: 10px;
+				left: 10px;
+				padding: 3px 10px;
+				border-radius: 12px;
+				background: #f03e3e;
+				color: white;
+				font-weight: 600;
+			}
+			img {
+		   		height: 270px;
+		   		margin: 0 -100%;
+		   		&:hover {
+		   			cursor: pointer;
+		   		}
+			}
+		}
+	}
+	text-align: center;
+	
+}
+// for cities and for cars
+.load-more {
+	transition: all 0.3s ease;
+	border: 1px solid #888;
+	color: #555;
+	padding: 10px 20px;
+	margin: 30px auto 45px auto;
+	cursor: pointer;
+	display: inline-block;
+	&:hover {
+		-webkit-transform: scale(1.1);
+    	-ms-transform: scale(1.1);
+    	transform: scale(1.1);
+	}
+}
+@media (max-width: 600px) {
+	.cars {
+		h2 {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	// .cities {
+	// 	.col-lg-8, .col-lg-4, .col-md-6,  {
+	// 		padding: 0 !important;
+	// 		height: auto !important;
+	// 		width: 100%;
+	// 		img {
+	// 			height: auto !important;
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// }
+}
+@media (max-width: 991px) {
+}

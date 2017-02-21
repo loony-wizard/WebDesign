@@ -1,0 +1,54 @@
+.albums
+	text-align: center
+	max-width: 900px
+	margin: 0 auto
+	padding: 20px
+	p.lead
+		max-width: 600px
+		margin: 0px auto 20px auto
+		color: #868e96
+		font-size: 1.2rem
+.album
+	margin: 10px 0
+	.image-wrapper
+		position: relative
+		width: 100%
+		cursor: pointer
+		img
+			width: 100%
+		.info
+			padding: 10px 10%
+			height: 100%
+			font-size: 1.05rem
+			position: absolute
+			left: 0
+			top: 0
+			color: white
+			width: 100%
+			background: black
+			opacity: 0
+		&:hover
+			.info
+				opacity: 0.9	
+	
+	.btn
+		$color: #868e96
+		a
+			font-weight: 300
+			font-size: 1.3rem
+			font-style: italic
+			color: $color
+			text-decoration: none
+			border-bottom: $color 1px solid
+
+		padding: 5px 30px
+		height: 32px
+		display: inline-block
+		margin: 15px auto		
+		clip-path: polygon(0px 0px, 100% 0px, calc(100% - 16px) 16px, 100% 32px, 0px 32px, 16px 16px);
+
+		&:hover
+			background: #c2255c
+			a
+				color: white
+				border-color: white

@@ -1,0 +1,57 @@
+=user-select($value)
+  -webkit-user-select: $value
+  -moz-user-select:    $value
+  -ms-user-select:     $value
+  user-select:         $value
+
+=box-sizing($value)
+  -webkit-box-sizing: $value
+  -moz-box-sizing:    $value
+  -ms-box-sizing:     $value
+  box-sizing:         $value
+
+*
+  +box-sizing(border-box)
+  +user-select(none)
+  transition: all 0.5s ease
+
+body, html
+	margin: 0
+	padding: 0
+
+$nav-width: 250px
+
+.nav-wrapper
+	background: white
+	text-align: center
+	position: fixed
+	width: $nav-width
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 2
+
+.nav-opened
+	left: 0 !important
+
+.container
+	margin-left: $nav-width
+	padding: 30px 10px
+	width: calc(100% - #{$nav-width})
+
+.menu-icon
+	display: none
+	cursor: pointer
+	z-index: 2
+
+@media screen and ( max-width: 768px )
+	.nav-wrapper
+		left: -$nav-width
+	.container
+		margin-left: 0
+		width: 100%
+	.menu-icon
+		display: block
+		position: fixed
+		top: 15px
+		right: 15px	
